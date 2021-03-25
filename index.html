@@ -25,10 +25,67 @@
             border-color: black;
             padding: 10px;
         }
+
+        .navigation {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+            list-style: none;
+            margin: 0;
+            background: deepskyblue;
+        }
+
+        .navigation a {
+            text-decoration: none;
+            display: block;
+            padding: 1em;
+            color: white;
+        }
+
+        .navigation a:hover {
+            background: #1565C0;
+        }
+
+        @media all and (max-width: 800px) {
+            .navigation {
+                /* When on medium sized screens, we center it by evenly distributing empty space around items */
+                justify-content: space-around;
+            }
+        }
+
+        @media all and (max-width: 500px) {
+            .navigation {
+                /* On small screens, we are no longer using row direction but column */
+                flex-direction: column;
+            }
+        }
+        #title
+        {
+            color: white;
+            margin-right: 20px;
+            margin-left: 20px;
+            font-size: 20px;
+            margin-top: -7px;
+            margin-bottom: -10px;
+            height: 56px;
+            
+        }
+        #title:hover {
+            background: deepskyblue;
+
+        }
     </style>
 </head>
 
 <body>
+    <ul class="navigation">
+        <img id="capImg" src="../Images/Webp.net-resizeimage.png" alt="..." style="vertical-align:middle;margin:0px -20px">
+        <a id="title">Victoria Factory Manager</a>
+        <li><a href="index.html">Factory Finder</a></li>
+        <li><a href="countrySpec.html">Country Oversight</a></li>
+        <!-- <li><a href="#">Products</a></li>
+        <li><a href="#">Contact</a></li> -->
+    </ul>
 
     <!-- CheckBoxs para todos os materiais -->
     <div class="row">
@@ -234,11 +291,8 @@
             </form>
         </div>
         <div class="col-sm" style="padding-top: 50px;padding-bottom: 50px;">
-            <div class="card-columns" style="width: 400px;">
-                <div id="card">
+            <div id="card" class="container" style="width: 400px;">
 
-
-                </div>
             </div>
         </div>
     </div>

@@ -387,7 +387,7 @@ function cardMaker(Factory) {
 
     } else {
         card.innerHTML += `
-    <div class="card" style="width: 18rem;padding-botton:10px">
+    <div class="card" style="width: 18rem;padding-botton:10px flex-wrap:wrap;">
                      
                      <div class="card-body">
                        <h5 class="card-title">${Factory}</h5>
@@ -403,18 +403,16 @@ function cardMaker(Factory) {
                  </div>
                 <div style="height:5px;"></div>
     `
-
     }
 
 }
 
- window.onload = function nightModeUpdate () {
-     //When you load the page he decides between normal theme or dark mode
-     let today = new Date()
-     let time = today.getHours()
-     if (time >= 18 || time <= 8) {
-         let body = document.body;
-         body.classList.toggle("dark-mode");
-     }
- }
- 
+// window.onload = function nightModeUpdate() {
+//     //When you load the page he decides between normal theme or dark mode
+//     let today = new Date()
+//     let time = today.getHours()
+//     if (time >= 18 || time <= 8) {
+//         let body = document.body;
+//         body.classList.toggle("dark-mode");
+//     }
+// }
