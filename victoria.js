@@ -387,7 +387,7 @@ function cardMaker(Factory) {
 
     } else {
         card.innerHTML += `
-    <div class="card" style="width: 18rem;padding-botton:10px flex-wrap:wrap;">
+    <div class="card" style="width: 18rem;padding-botton:10px flex-wrap:wrap;background-color: #1f2833;">
                      
                      <div class="card-body">
                        <h5 class="card-title">${Factory}</h5>

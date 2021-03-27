@@ -11,13 +11,26 @@
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
     <style>
+        /*
+        #282828
+        #3500d3
+        #240090
+        #190061
+        #0C0032
+        */
+
+        body {
+            background-color: #2c3d52;
+            color: white;
+        }
+
         .dark-mode {
             background-color: black;
             color: white;
         }
 
         .card-title {
-            color: blue;
+            color: rgb(255, 255, 255);
         }
 
         .card {
@@ -32,7 +45,7 @@
             justify-content: flex-start;
             list-style: none;
             margin: 0;
-            background: deepskyblue;
+            background: #1f2833;
         }
 
         .navigation a {
@@ -43,7 +56,8 @@
         }
 
         .navigation a:hover {
-            background: #1565C0;
+
+            background: #1f2833;
         }
 
         @media all and (max-width: 800px) {
@@ -59,8 +73,8 @@
                 flex-direction: column;
             }
         }
-        #title
-        {
+
+        #title {
             color: white;
             margin-right: 20px;
             margin-left: 20px;
@@ -68,10 +82,11 @@
             margin-top: -7px;
             margin-bottom: -10px;
             height: 56px;
-            
+
         }
+
         #title:hover {
-            background: deepskyblue;
+            background: #282828;
 
         }
     </style>
@@ -79,7 +94,8 @@
 
 <body>
     <ul class="navigation">
-        <img id="capImg" src="../Images/Webp.net-resizeimage.png" alt="..." style="vertical-align:middle;margin:0px -20px">
+        <img id="capImg" src="../Images/Webp.net-resizeimage.png" alt="..."
+            style="vertical-align:middle;margin:0px -20px">
         <a id="title">Victoria Factory Manager</a>
         <li><a href="index.html">Factory Finder</a></li>
         <li><a href="countrySpec.html">Country Oversight</a></li>
@@ -92,98 +108,98 @@
         <div class="col-sm" style="padding-top: 40px; padding-left: 20px;">
             <form @submit.prevent="search">
 
-                <div id="mainBody">
+                <div id="mainBody" style="padding-left: 80px;padding-top: 30px;">
 
                     <div id="naturalResources">
                         <h3>Natural Resources</h3>
 
                         <!-- Rubber -->
                         <img src="../Images/28px-Resource_rubber.png" alt="error">
-                        <label for="rubber">Rubber</label>
+                        <label for="rubber" style="font-size: 20px;">Rubber</label>
                         <input type="checkbox" id="rubber" style="width: 25px;height: 25px;">
 
                         <br>
 
                         <!-- Sulfur -->
                         <img src="../Images/28px-Sulphur.png" alt="error">
-                        <label for="sulfur">Sulfur</label>
+                        <label for="sulfur" style="font-size: 20px;">Sulfur</label>
                         <input type="checkbox" id="sulfur" style="width: 25px;height: 25px;">
 
                         <br>
 
                         <!-- Iron -->
                         <img src="../Images/28px-Iron.png" alt="error">
-                        <label for="iron">Iron</label>
+                        <label for="iron" style="font-size: 20px;">Iron</label>
                         <input type="checkbox" id="iron" style="width: 25px;height: 25px;">
 
                         <br>
 
                         <!-- Fish -->
                         <img src="../Images/28px-Fish.png" alt="error">
-                        <label for="fish">Fish</label>
+                        <label for="fish" style="font-size: 20px;">Fish</label>
                         <input type="checkbox" id="fish" style="width: 25px;height: 25px;">
 
                         <br>
 
                         <!-- Cattle -->
                         <img src="../Images/28px-Cattle.png" alt="error">
-                        <label for="cattle">Cattle</label>
+                        <label for="cattle" style="font-size: 20px;">Cattle</label>
                         <input type="checkbox" id="cattle" style="width: 25px;height: 25px;">
 
                         <br>
 
                         <!-- Grain -->
                         <img src="../Images/28px-Grain.png" alt="error">
-                        <label for="grain">Grain</label>
+                        <label for="grain" style="font-size: 20px;">Grain</label>
                         <input type="checkbox" id="grain" style="width: 25px;height: 25px;">
 
                         <br>
 
                         <!-- Coal -->
                         <img src="../Images/28px-Coal.png" alt="error">
-                        <label for="coal">Coal</label>
+                        <label for="coal" style="font-size: 20px;">Coal</label>
                         <input type="checkbox" id="coal" style="width: 25px;height: 25px;">
 
                         <br>
 
                         <!-- Timber -->
                         <img src="../Images/28px-Timber.png" alt="error">
-                        <label for="timber">Timber</label>
+                        <label for="timber" style="font-size: 20px;">Timber</label>
                         <input type="checkbox" id="timber" style="width: 25px;height: 25px;">
 
                         <br>
 
                         <!-- Cotton -->
                         <img src="../Images/28px-Cotton.png" alt="error">
-                        <label for="cotton">Cotton</label>
+                        <label for="cotton" style="font-size: 20px;">Cotton</label>
                         <input type="checkbox" id="cotton" style="width: 25px;height: 25px;">
 
                         <br>
 
                         <!-- Oil -->
                         <img src="../Images/28px-Resource_oil.png" alt="error">
-                        <label for="oil">Oil</label>
+                        <label for="oil" style="font-size: 20px;">Oil</label>
                         <input type="checkbox" id="oil" style="width: 25px;height: 25px;">
 
                         <br>
 
                         <!-- Silk -->
                         <img src="../Images/28px-Silk.png" alt="error">
-                        <label for="silk">Silk</label>
+                        <label for="silk" style="font-size: 20px;">Silk</label>
                         <input type="checkbox" id="silk" style="width: 25px;height: 25px;">
 
                         <br>
 
                         <!-- Tropical Wood -->
                         <img src="../Images/28px-Tropical_wood.png" alt="error">
-                        <label for="troWood">Tropical Wood</label>
+                        <label for="troWood" style="font-size: 20px;">Tropical Wood</label>
                         <input type="checkbox" id="troWood" style="width: 25px;height: 25px;">
 
                         <br>
 
                         <!-- Fruit -->
                         <img src="../Images/28px-Fruit.png" alt="error">
-                        <label for="fruit">Fruit</label>
+                        <label for="fruit" style="font-size: 20px;">Fruit</label>
                         <input type="checkbox" id="fruit" style="width: 25px;height: 25px;">
 
                     </div>
@@ -192,109 +208,111 @@
 
                         <!-- eletricGear -->
                         <img src="../Images/28px-Resource_electric_parts.png" alt="error">
-                        <label for="eletricGear">Eletric gear</label>
+                        <label for="eletricGear" style="font-size: 20px;">Eletric gear</label>
                         <input type="checkbox" id="eletricGear" style="width: 25px;height: 25px;">
 
                         <br>
 
                         <!-- Machine Parts -->
                         <img src="../Images/28px-Resource_machine_parts.png" alt="error">
-                        <label for="machineParts">Machine parts</label>
+                        <label for="machineParts" style="font-size: 20px;">Machine parts</label>
                         <input type="checkbox" id="machineParts" style="width: 25px;height: 25px;">
 
                         <br>
 
                         <!-- Steel -->
                         <img src="../Images/28px-Resource_steel.png" alt="error">
-                        <label for="steel">Steel</label>
+                        <label for="steel" style="font-size: 20px;">Steel</label>
                         <input type="checkbox" id="steel" style="width: 25px;height: 25px;">
 
                         <br>
 
                         <!-- Explosives -->
                         <img src="../Images/28px-Resource_explosives.png" alt="error">
-                        <label for="explosives">Explosives</label>
+                        <label for="explosives" style="font-size: 20px;">Explosives</label>
                         <input type="checkbox" id="explosives" style="width: 25px;height: 25px;">
 
                         <br>
 
                         <!-- Automobiles -->
                         <img src="../Images/28px-Resource_automobiles.png" alt="error">
-                        <label for="automobiles">Automobiles</label>
+                        <label for="automobiles" style="font-size: 20px;">Automobiles</label>
                         <input type="checkbox" id="automobiles" style="width: 25px;height: 25px;">
 
                         <br>
 
                         <!-- Lumber -->
                         <img src="../Images/28px-Resource_lumber.png" alt="error">
-                        <label for="lumber">Lumber</label>
+                        <label for="lumber" style="font-size: 20px;">Lumber</label>
                         <input type="checkbox" id="lumber" style="width: 25px;height: 25px;">
 
                         <br>
 
                         <!-- Fabric -->
                         <img src="../Images/28px-Resource_cloth.png" alt="error">
-                        <label for="fabric">Fabric</label>
+                        <label for="fabric" style="font-size: 20px;">Fabric</label>
                         <input type="checkbox" id="fabric" style="width: 25px;height: 25px;">
 
                         <br>
 
                         <!-- Fertilizer -->
                         <img src="../Images/28px-Resource_fertilizer.png" alt="error">
-                        <label for="fertilizer">Fertilizer</label>
+                        <label for="fertilizer" style="font-size: 20px;">Fertilizer</label>
                         <input type="checkbox" id="fertilizer" style="width: 25px;height: 25px;">
 
                         <br>
 
                         <!-- Ammunition -->
                         <img src="../Images/28px-Resource_ammunition.png" alt="error">
-                        <label for="ammunition">Ammunition</label>
+                        <label for="ammunition" style="font-size: 20px;">Ammunition</label>
                         <input type="checkbox" id="ammunition" style="width: 25px;height: 25px;">
 
                         <br>
 
                         <!-- Dye -->
                         <img src="../Images/28px-Dye.png" alt="error">
-                        <label for="dye">Dye</label>
+                        <label for="dye" style="font-size: 20px;">Dye</label>
                         <input type="checkbox" id="dye" style="width: 25px;height: 25px;">
 
                         <br>
 
                         <!-- Glass -->
                         <img src="../Images/28px-Resource_glass.png" alt="error">
-                        <label for="glass">Glass</label>
+                        <label for="glass" style="font-size: 20px;">Glass</label>
                         <input type="checkbox" id="glass" style="width: 25px;height: 25px;">
 
                         <br>
 
                         <!-- Regular Clothes -->
                         <img src="../Images/28px-Resource_regular_clothes.png" alt="error">
-                        <label for="rc">Regular Clothes</label>
+                        <label for="rc" style="font-size: 20px;">Regular Clothes</label>
                         <input type="checkbox" id="rc" style="width: 25px;height: 25px;">
 
                         <br>
 
                         <!-- Furniture -->
                         <img src="../Images/28px-Resource_furniture.png" alt="error">
-                        <label for="furniture">Furniture</label>
+                        <label for="furniture" style="font-size: 20px;">Furniture</label>
                         <input type="checkbox" id="furniture" style="width: 25px;height: 25px;">
 
                     </div>
-
-                    <br>
-                    <br>
-
-                    <button type="button" class="btn btn-primary" accesskey="Enter" onclick="search()">Procurar</button>
+                    <button style="padding-left: 100px;padding-right: 100px; margin-top:50px;"type="button" class="btn btn-primary" accesskey="Enter" onclick="search()">Procurar</button>
 
                 </div>
 
             </form>
         </div>
-        <div class="col-sm" style="padding-top: 50px;padding-bottom: 50px;">
+        <div class="col-sm">
+
+
+        </div>
+        <div class="col-sm" style="padding-top: 70px;padding-bottom: 50px;">
+            <h5 style="padding-left: 250px;padding-bottom: 10px;">Factories Available</h5>
             <div id="card" class="container" style="width: 400px;">
 
             </div>
         </div>
+    </div>
     </div>
 
 
