@@ -406,13 +406,3 @@ function cardMaker(Factory) {
     }
 
 }
-
-// window.onload = function nightModeUpdate() {
-//     //When you load the page he decides between normal theme or dark mode
-//     let today = new Date()
-//     let time = today.getHours()
-//     if (time >= 18 || time <= 8) {
-//         let body = document.body;
-//         body.classList.toggle("dark-mode");
-//     }
-// }
